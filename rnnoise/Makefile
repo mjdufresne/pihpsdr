@@ -8,9 +8,9 @@
 # into 6 files that can be compiled separately.
 #
 
-CFLAGS?= -pthread -O3 -D_GNU_SOURCE -Wno-parentheses -Iinclude -Isrc
+CFLAGS?= -pthread -O3 -D_GNU_SOURCE -Wno-parentheses
 
-COMPILE=$(CC) $(CFLAGS) 
+COMPILE=$(CC) $(CFLAGS) -Iinclude -Isrc
 
 SOURCES=  \
 src/denoise.c \
